@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Abstractions.Contracts;
+namespace DataLayerAbstractions.Contracts;
 
 /// <summary>
 /// A wrapper for any <typeparamref name="TContext"/> instance that makes it easy to mock operations executed on it. Solves the problem of not being able to mock EF Queryable extensions.

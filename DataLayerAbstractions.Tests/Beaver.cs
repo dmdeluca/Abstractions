@@ -1,4 +1,4 @@
-namespace Abstractions.Tests;
+namespace DataLayerAbstractions.Tests;
 
 public class Beaver
 {

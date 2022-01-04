@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Abstractions.Contracts;
+using DataLayerAbstractions.Contracts;
 
-namespace Abstractions;
+namespace DataLayerAbstractions;
 
 public class DbContextWrapper<TContext> : IDbContextWrapper<TContext> where TContext : DbContext
 {
@@ -15,7 +15,7 @@ public class DbContextWrapper<TContext> : IDbContextWrapper<TContext> where TCon
         this.dbContext = dbContext;
     }
 
-    public TResult Execute<TResult>(Func<TContext, TResult> function) 
+    public TResult Execute<TResult>(Func<TContext, TResult> function)
     {
         if (function is null)
             throw new ArgumentNullException(nameof(function));

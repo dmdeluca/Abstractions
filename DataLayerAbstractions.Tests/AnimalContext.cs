@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Abstractions.Tests;
+namespace DataLayerAbstractions.Tests;
 
 public class AnimalContext : DbContext
 {

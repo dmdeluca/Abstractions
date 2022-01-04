@@ -1,13 +1,13 @@
 using Moq;
 using Xunit;
-using Abstractions.Contracts;
+using DataLayerAbstractions.Contracts;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace Abstractions.Tests;
+namespace DataLayerAbstractions.Tests;
 
 public class DbWrapperTests
 {
