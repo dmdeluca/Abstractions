@@ -1,0 +1,6 @@
+bin/
+obj/
+project.nuget.cache
+*assets.cache
+project.assets.json
+*.g.cs
