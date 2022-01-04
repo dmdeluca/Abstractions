@@ -29,6 +29,7 @@ public class DbWrapperTests
                     .Where(x => x.BeaverName != null && x.BeaverName.StartsWith("A"))
                     .Where(x => x.LodgeId == 45)
                     .Select(x => x.BeaverId)
+                    // This whole function returns a Task, which is awaited by the caller.
                     .ToListAsync();
             });
 
